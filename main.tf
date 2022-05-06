@@ -6,8 +6,7 @@ resource "aws_vpc" "main" {
            Environment = "${var.environment}"
           }
 }
-
-resource "aws_instance" "test" {
+resource "aws_instance" "instance" {
   ami           = "ami-0022f774911c1d690"
   instance_type = "t2.micro"
 
